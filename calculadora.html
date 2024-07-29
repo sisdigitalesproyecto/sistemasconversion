@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Bases Numéricas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Menu de Navegacion -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="acerca-de.html">Acerca de</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Convertidor de bases numéricas</h1>
+        <div class="description">
+            Este <strong>convertidor de bases numéricas</strong> puede convertir entre decimal, binario y hexadecimal a cualquier otra base. Escribe el número, selecciona la base y la conversión se hará automáticamente.
+        </div>
+        <input type="text" id="input-number" placeholder="El número que deseas convertir">
+        <div class="convert-from">
+            <label>Convertir desde...</label>
+            <label><input type="radio" name="base" value="binario"> Binario</label>
+            <label><input type="radio" name="base" value="decimal" checked> Decimal</label>
+            <label><input type="radio" name="base" value="hexadecimal"> Hexadecimal</label>
+        </div>
+        <div class="results">
+            <div class="result" id="binary-result">BINARIO: <span id="binary-output"></span></div>
+            <div class="result" id="decimal-result">DECIMAL: <span id="decimal-output"></span></div>
+            <div class="result" id="hexadecimal-result">HEXADECIMAL: <span id="hexadecimal-output"></span></div>
+        </div>
+        <button onclick="window.location.href='index.html'" class="back-button">Volver a la Página Principal</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Proyecto Fundamentos. Todos los derechos reservados.</p>
+        <p>
+            <a href="index.html">Inicio</a> |
+            <a href="recursos.html">Recursos</a> |
+            <a href="acerca-de.html">Acerca de</a> |
+            <a href="calculadora.html">Calculadora</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
